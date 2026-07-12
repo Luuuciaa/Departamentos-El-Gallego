@@ -242,11 +242,12 @@ nav a:hover {
     transition: transform 0.3s ease;
     margin-bottom: 50px;
     margin-top: 30px;
-    border: 2px solid #734124;
+   
 }
 
 .card:hover {
     transform: translateY(-8px);
+    transition: .3s;
 }
 
 .card h3 {
@@ -321,7 +322,7 @@ nav a:hover {
     margin: 50px auto;
     /* centra el bloque */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #734124;
+  
 }
 
 .contenedor-servicios {
