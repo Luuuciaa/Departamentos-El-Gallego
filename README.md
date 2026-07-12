@@ -24,6 +24,7 @@ El sitio permite a los usuarios:
 - Font Awesome / Boxicons
 
 ## 📂 Estructura del proyecto
+```
 Departamento-El-Gallego/
 │
 ├── index.html
@@ -39,6 +40,7 @@ Departamento-El-Gallego/
 │ └── imágenes del proyecto
 │
 └── README.md
+```
 
 
 ## ✨ Características principales
