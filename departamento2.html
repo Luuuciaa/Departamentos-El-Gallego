@@ -28,9 +28,12 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-        
+
     <!--ESTILOS CSS-->
     <link rel="stylesheet" href="/css/estilos.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+
 
 </head>
 
@@ -40,9 +43,16 @@
         <nav>
             <!--LOGO-->
             <img src="/img/logo.png" alt="Logo Gaston Gallego" width="80">
+            <!--MENÚ HAMBURGUESA-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
             <!--MENÚ DE NAVEGACIÓN-->
-            <ul>
+            <ul class="nav_items" id="_items">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -60,112 +70,115 @@
                 </li>
 
             </ul>
+
+
         </nav>
     </header>
 
     <main>
 
-    <section class="detalle-depto">
+        <section class="detalle-depto">
 
-        <!-- COLUMNA IZQUIERDA -->
-        <div class="columna-izquierda">
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="columna-izquierda">
 
-            <!-- CARRUSEL -->
-            <div id="carouselExample" class="carousel slide">
+                <!-- CARRUSEL -->
+                <div id="carouselExample" class="carousel slide">
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/comedordepto.jpg" class="d-block w-100" alt="Comedor">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/comedordepto.jpg" class="d-block w-100" alt="Comedor">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/comedordepto1.jpg" class="d-block w-100" alt="Escalera">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/balcondepto.jpg" class="d-block w-100" alt="Cocina">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/bañodepto1.jpg" class="d-block w-100" alt="Cocina">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/bañodepto.jpg" class="d-block w-100" alt="Habitación">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/habitaciondepto.jpg" class="d-block w-100" alt="Habitación">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/habitaciondepto1.jpg" class="d-block w-100" alt="Balcón">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/habitaciondepto2.jpg" class="d-block w-100" alt="Baño">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/cocinadepto.jpg" class="d-block w-100" alt="Inodoro">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/cocinadepto1.jpg" class="d-block w-100" alt="Altillo">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/parrilladepto.jpg" class="d-block w-100" alt="Parrilla">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/entradadepto.jpg" class="d-block w-100" alt="Patio">
+                        </div>
+
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="img/comedordepto1.jpg" class="d-block w-100" alt="Escalera">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
 
-                    <div class="carousel-item">
-                        <img src="img/balcondepto.jpg" class="d-block w-100" alt="Cocina">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/bañodepto1.jpg" class="d-block w-100" alt="Cocina">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/bañodepto.jpg" class="d-block w-100" alt="Habitación">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/habitaciondepto.jpg" class="d-block w-100" alt="Habitación">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/habitaciondepto1.jpg" class="d-block w-100" alt="Balcón">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/habitaciondepto2.jpg" class="d-block w-100" alt="Baño">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/cocinadepto.jpg" class="d-block w-100" alt="Inodoro">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/cocinadepto1.jpg" class="d-block w-100" alt="Altillo">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/parrilladepto.jpg" class="d-block w-100" alt="Parrilla">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="img/entradadepto.jpg" class="d-block w-100" alt="Patio">
-                    </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
             </div>
 
-        </div>
+            <!-- INFORMACIÓN -->
+            <div class="info-depto">
 
-        <!-- INFORMACIÓN -->
-        <div class="info-depto">
+                <h1>Departamento 2</h1>
 
-            <h1>Departamento 2</h1>
+                <p><i class="fas fa-user"></i> Capacidad: 4/6 personas</p>
+                <p><i class="fas fa-arrow-up"></i> Acceso por escalera</p>
+                <p><i class="fas fa-bed"></i> Habitación matrimonial con cama con sommier y Tv.</p>
+                <p><i class="fas fa-bed"></i> Habitación con camas de 1 plaza.</p>
+                <p><i class="fas fa-bath"></i> 1 baño</p>
+                <p><i class="fas fa-fan"></i> Ventilador de techo</p>
+                <p><i class="fas fa-wifi"></i> WiFi (fibra óptica)</p>
+                <p><i class="fas fa-tv"></i> TV por cable</p>
+                <p><i class="fas fa-coffee"></i> Microondas</p>
+                <p><i class="fas fa-fire"></i> Calefacción a gas natural</p>
+                <p><i class="fas fa-utensils"></i> Patio con parrilla</p>
+                <p><i class="fas fa-ban"></i> No cuenta con sábanas ni toallones</p>
+                <p><i class="fas fa-user-slash"></i> No se aceptan grupos de menores sin responsable mayor de edad</p>
+                <p><i class="fas fa-question"></i>Mascotas consultar</p>
 
-            <p><i class="fas fa-user"></i> Capacidad: 4/6 personas</p>
-            <p><i class="fas fa-arrow-up"></i> Acceso por escalera</p>
-            <p><i class="fas fa-bed"></i> Habitación matrimonial con cama con sommier y Tv.</p>
-            <p><i class="fas fa-bed"></i> Habitación con camas de 1 plaza.</p>
-            <p><i class="fas fa-bath"></i> 1 baño</p>
-            <p><i class="fas fa-fan"></i> Ventilador de techo</p>
-            <p><i class="fas fa-wifi"></i> WiFi (fibra óptica)</p>
-            <p><i class="fas fa-tv"></i> TV por cable</p>
-            <p><i class="fas fa-microchip"></i> Microondas</p>
-            <p><i class="fas fa-fire"></i> Calefacción a gas natural</p>
-            <p><i class="fas fa-utensils"></i> Patio con parrilla</p>
-            <p><i class="fas fa-ban"></i> No cuenta con sábanas ni toallones</p>
-            <p><i class="fas fa-user-slash"></i> No se aceptan grupos de menores sin responsable mayor de edad</p>
-
-         <a href="https://wa.me/5492257632516?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20del%20departamento%20para%204%20a%206%20personas.%20Quisiera%20saber%20precios%20y%20fechas%20disponibles."
+                <a href="https://wa.me/5492257632516?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20del%20departamento%20para%204%20a%206%20personas.%20Quisiera%20saber%20precios%20y%20fechas%20disponibles."
                     class="btn-whatsapp" target="_blank">
                     Consultar disponibilidad
                 </a>
 
-        </div>
+            </div>
 
 
-        <!-- VIDEO -->
+            <!-- VIDEO -->
             <div class="video-depto">
                 <h2>Video del departamento</h2>
 
@@ -175,15 +188,15 @@
                 </video>
             </div>
 
-    </section>
-   
-</main>
+        </section>
 
-       <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/5492257632516" class="whatsapp-float" target="_blank" title="Ir a WhatsApp">
-            <img src="img/Icono-WhatsApp.png" alt="WhatsApp" class="whatsapp-button">
+    </main>
 
-        </a>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5492257632516" class="whatsapp-float" target="_blank" title="Ir a WhatsApp">
+        <img src="img/Icono-WhatsApp.png" alt="WhatsApp" class="whatsapp-button">
+
+    </a>
 
     <!--PIE DE PÁGINA-->
     <footer>
@@ -235,6 +248,8 @@
         </div>
         <p>© 2026 Gastón Gallego - Todos los derechos reservados</p>
     </footer>
+    
+    <script src="/js/menu.js"></script>
 
 
 </body>

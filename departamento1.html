@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+ 
     <!--TIPOGRAFÍAS-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -32,17 +33,26 @@
     <!--ESTILOS CSS-->
     <link rel="stylesheet" href="/css/estilos.css">
 
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+
 </head>
 
 <body>
 
     <header>
-        <nav>
+       <nav>
             <!--LOGO-->
             <img src="/img/logo.png" alt="Logo Gaston Gallego" width="80">
+             <!--MENÚ HAMBURGUESA-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
             <!--MENÚ DE NAVEGACIÓN-->
-            <ul>
+            <ul class="nav_items" id="_items">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -60,6 +70,8 @@
                 </li>
 
             </ul>
+
+           
         </nav>
     </header>
 
@@ -154,11 +166,13 @@
                 <p><i class="fas fa-fan"></i> Ventilador de techo</p>
                 <p><i class="fas fa-wifi"></i> WiFi (fibra óptica)</p>
                 <p><i class="fas fa-tv"></i> TV por cable</p>
-                <p><i class="fas fa-microchip"></i> Microondas</p>
+                <p><i class="fas fa-coffee"></i> Microondas</p>
                 <p><i class="fas fa-fire"></i> Calefacción a gas natural</p>
                 <p><i class="fas fa-utensils"></i> Patio con parrilla</p>
                 <p><i class="fas fa-ban"></i> No cuenta con sábanas ni toallones</p>
                 <p><i class="fas fa-user-slash"></i> No se aceptan grupos de menores sin responsable mayor de edad</p>
+                <p><i class="fas fa-question"></i>Mascotas consultar</p>
+
 
                 <a href="https://wa.me/5492257632516?text=Hola,%20quisiera%20consultar%20la%20disponibilidad%20del%20departamento%20para%202%20a%204%20personas.%20Quisiera%20saber%20precios%20y%20fechas%20disponibles."
                     class="btn-whatsapp" target="_blank">
@@ -238,6 +252,8 @@
         </div>
         <p>© 2026 Gastón Gallego - Todos los derechos reservados</p>
     </footer>
+    
+    <script src="/js/menu.js"></script>
 
 
 </body>

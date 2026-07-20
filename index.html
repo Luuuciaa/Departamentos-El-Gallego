@@ -10,9 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!--ESTILOS CSS-->
-    <link rel="stylesheet" href="/css/estilos.css">
-
+    
     <!--TIPOGRAFÍAS-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,6 +21,11 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+        <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+
 </head>
 
 <body>
@@ -31,9 +34,16 @@
         <nav>
             <!--LOGO-->
             <img src="/img/logo.png" alt="Logo Gaston Gallego" width="80">
+             <!--MENÚ HAMBURGUESA-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
             <!--MENÚ DE NAVEGACIÓN-->
-            <ul>
+            <ul class="nav_items" id="_items">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -51,6 +61,8 @@
                 </li>
 
             </ul>
+
+           
         </nav>
     </header>
 
@@ -72,15 +84,15 @@
 
                 <div class="texto-presentacion1">
                     <p>
-                        ✔ Vení a disfrutar de unas vacaciones inolvidables en San Clemente del Tuyú.
+                         Vení a disfrutar de unas vacaciones inolvidables en San Clemente del Tuyú.
                     </p>
 
                     <p>
-                        ✔ Departamentos cómodos y equipados, ubicados a 5 cuadras de la playa.
+                        Departamentos cómodos y equipados, ubicados a 5 cuadras de la playa.
                     </p>
 
                     <p>
-                        ✔ Reservá tu alojamiento con anticipación y asegurá tu estadía.
+                         Reservá tu alojamiento con anticipación y asegurá tu estadía.
                     </p>
 
                 </div>
@@ -93,6 +105,10 @@
         <!--DEPARTAMENTOS-->
         <section class="departamentos">
             <h2>Nuestros departamentos</h2>
+            <p class="descripcion-departamentos">
+                Contamos con departamentos totalmente equipados para 2 a 6 personas.<br>
+                Ideales para disfrutar unas vacaciones cómodas y tranquilas en San Clemente del Tuyú.
+            </p>
             <div class="contenedor-deptos">
                 <div class="card">
                     <img src="img/depto1.jpg" alt="Departamento 1">
@@ -191,7 +207,8 @@
                 <ul>
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
-                        <a  href="https://www.google.com/maps/place/San+Clemente+del+Tuyu,+Provincia+de+Buenos+Aires/@-36.3764784,-56.7758433,13z/data=!3m1!4b1!4m6!3m5!1s0x959c1b18461b0a27:0xd06f9847d9e161fa!8m2!3d-36.3688312!4d-56.7185135!16s%2Fm%2F04lf4gs?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D "target="_blank" >San Clemente del Tuyú, La Costa</a>
+                        <a href="https://www.google.com/maps/place/San+Clemente+del+Tuyu,+Provincia+de+Buenos+Aires/@-36.3764784,-56.7758433,13z/data=!3m1!4b1!4m6!3m5!1s0x959c1b18461b0a27:0xd06f9847d9e161fa!8m2!3d-36.3688312!4d-56.7185135!16s%2Fm%2F04lf4gs?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D "
+                            target="_blank">San Clemente del Tuyú, La Costa</a>
                     </li>
 
                     <li>
@@ -204,7 +221,7 @@
         <p>© 2026 Gastón Gallego - Todos los derechos reservados</p>
     </footer>
 
-
+   <script src="/js/menu.js"></script>
 </body>
 
 </html>

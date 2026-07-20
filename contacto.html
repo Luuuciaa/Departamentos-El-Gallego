@@ -10,14 +10,22 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!--ESTILOS CSS-->
-    <link rel="stylesheet" href="/css/estilos.css">
-
     <!--TIPOGRAFÍAS-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
 
 
 </head>
@@ -28,9 +36,16 @@
         <nav>
             <!--LOGO-->
             <img src="/img/logo.png" alt="Logo Gaston Gallego" width="80">
+            <!--MENÚ HAMBURGUESA-->
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
             <!--MENÚ DE NAVEGACIÓN-->
-            <ul>
+            <ul class="nav_items" id="_items">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -48,6 +63,8 @@
                 </li>
 
             </ul>
+
+
         </nav>
     </header>
 
@@ -56,7 +73,7 @@
 
         <h1>Contacto</h1>
         <p class="subtitulo1">
-            Consultá la disponibilidad de nuestros departamentos por WhatsApp.
+            Consultá la disponibilidad de nuestros departamentos por WhatsApp.<br>
             Te responderemos lo antes posible.
         </p>
 
@@ -79,12 +96,28 @@
                 <h3>Email</h3>
                 <p>Envianos tu consulta y te responderemos a la brevedad.</p>
 
-                <a href="mailto:tucorreo@gmail.com" class="btn-email">
+                <a href="mailto:ghflb@yahoo.com.ar" class="btn-email">
                     Enviar Email
                 </a>
             </div>
 
-        </div>
+            <div class="contacto-card">
+                <i class="fa-solid fa-share-nodes icono-compartir"></i>
+
+                <h3>Redes Sociales</h3>
+
+                <p>Seguinos en nuestras redes.</p>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/gastonhermindo/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/gaston.gallego.33" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
 
     </main>
 
@@ -140,7 +173,7 @@
         <p>© 2026 Gastón Gallego - Todos los derechos reservados</p>
     </footer>
 
-
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>
