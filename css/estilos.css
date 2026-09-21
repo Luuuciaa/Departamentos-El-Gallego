@@ -366,7 +366,38 @@ nav a:hover {
     }
 
 }
+.finde{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 50px auto;
+    /* centra el bloque */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.finde p{
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    line-height: 35px;
+    font-size: 19px;
+    font-weight: 700;
+}
 
+/*PARA CELULARES*/
+@media (max-width:768px) {
+    .finde{
+        padding: 15px;
+        width: 80%;
+    }
+    .finde p{
+        font-size: 14px;
+        width: 100%;
+        line-height: 30px;
+       
+    }
+}
 /*********************************DEPARTAMENTOS INICIO * *****************************/
 
 .departamentos h2::after,
